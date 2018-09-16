@@ -1,14 +1,14 @@
 describe('api.readSettings', () => {
-  jest.mock('./api', () => {
-    return {
-      readSettings: jest
-        .fn()
-        .mockReturnValue(Promise.resolve())
-        .mockReturnValueOnce(Promise.resolve({ status: 'ok' }))
-    };
-  });
+  // jest.mock('./api', () => {
+  //   return {
+  //     readSettings: jest
+  //       .fn()
+  //       .mockReturnValue(Promise.resolve())
+  //       .mockReturnValueOnce(Promise.resolve({ status: 'ok' }))
+  //   };
+  // });
 
-  // jest.mock('./api');
+  jest.mock('./api');
 
   test('should work', async () => {
     const api = require('./api');
