@@ -51,6 +51,9 @@ function statistics(state, { type, error, payload }) {
 }
 
 const INITIAL_SETTINGS_STATE = {
+  isLoading: false,
+  isError: false,
+  result: null,
 };
 
 function settings(state, { type, error, payload }) {
